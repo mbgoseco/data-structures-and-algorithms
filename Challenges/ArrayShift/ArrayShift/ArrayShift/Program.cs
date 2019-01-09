@@ -2,19 +2,19 @@
 
 namespace ArrayShift
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
             int[] oldArr = { 1, 7, 3, 8, 15, };
             int midNum = 5;
             Console.WriteLine($"Old array: [{string.Join(", ", oldArr)}]. Integer to insert to middle: {midNum}");
-            int[] result = ArrayShift(oldArr, midNum);
+            int[] result = InsertArrayShift(oldArr, midNum);
             Console.WriteLine($"New array: [{string.Join(", ", result)}]");
 
         }
 
-        public static int[] ArrayShift(int[] arr, int midVal)
+        public static int[] InsertArrayShift(int[] arr, int midVal)
         {
             int[] newArr = new int[arr.Length + 1];
             decimal mid = Math.Ceiling((decimal)newArr.Length / 2) - 1;
