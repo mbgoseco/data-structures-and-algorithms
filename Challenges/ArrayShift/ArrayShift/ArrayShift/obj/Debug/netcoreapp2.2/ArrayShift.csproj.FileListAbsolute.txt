@@ -1,0 +1,11 @@
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\bin\Debug\netcoreapp2.2\ArrayShift.deps.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\bin\Debug\netcoreapp2.2\ArrayShift.runtimeconfig.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\bin\Debug\netcoreapp2.2\ArrayShift.runtimeconfig.dev.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\bin\Debug\netcoreapp2.2\ArrayShift.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\bin\Debug\netcoreapp2.2\ArrayShift.pdb
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\obj\Debug\netcoreapp2.2\ArrayShift.csprojAssemblyReference.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\obj\Debug\netcoreapp2.2\ArrayShift.csproj.CoreCompileInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\obj\Debug\netcoreapp2.2\ArrayShift.AssemblyInfoInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\obj\Debug\netcoreapp2.2\ArrayShift.AssemblyInfo.cs
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\obj\Debug\netcoreapp2.2\ArrayShift.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\ArrayShift\ArrayShift\ArrayShift\obj\Debug\netcoreapp2.2\ArrayShift.pdb
