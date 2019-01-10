@@ -4,4 +4,4 @@
 
 1. [Insert and Shift Array](Challenges/ArrayShift/ArrayShift)
 
-2. [Array Binary Search](master/Challenges/BinarySearch)
+2. [Array Binary Search](Challenges/BinarySearch)
