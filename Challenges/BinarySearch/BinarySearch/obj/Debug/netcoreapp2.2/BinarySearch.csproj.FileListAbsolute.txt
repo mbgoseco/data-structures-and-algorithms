@@ -1,0 +1,11 @@
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\bin\Debug\netcoreapp2.2\BinarySearch.deps.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\bin\Debug\netcoreapp2.2\BinarySearch.runtimeconfig.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\bin\Debug\netcoreapp2.2\BinarySearch.runtimeconfig.dev.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\bin\Debug\netcoreapp2.2\BinarySearch.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\bin\Debug\netcoreapp2.2\BinarySearch.pdb
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\obj\Debug\netcoreapp2.2\BinarySearch.csprojAssemblyReference.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\obj\Debug\netcoreapp2.2\BinarySearch.csproj.CoreCompileInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\obj\Debug\netcoreapp2.2\BinarySearch.AssemblyInfoInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\obj\Debug\netcoreapp2.2\BinarySearch.AssemblyInfo.cs
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\obj\Debug\netcoreapp2.2\BinarySearch.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\BinarySearch\BinarySearch\obj\Debug\netcoreapp2.2\BinarySearch.pdb
