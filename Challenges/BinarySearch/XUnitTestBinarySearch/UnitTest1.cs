@@ -7,16 +7,16 @@ namespace XUnitTestBinarySearch
     public class UnitTest1
     {
         [Fact]
-        public void KeyAtStart()
+        public void KeyAtStartEven()
         {
             int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             Assert.Equal(0, (int)Program.BinarySearch(arr, 1));
         }
         [Fact]
-        public void KeyAtEnd()
+        public void KeyAtEndOdd()
         {
-            int[] arr = { 11, 22, 33, 44, 55, 66, 77, 88, 99, 111, 222 };
-            Assert.Equal(10, (int)Program.BinarySearch(arr, 222));
+            int[] arr = { 11, 22, 33, 44, 55, 66, 77, 88, 99, 100, 111 };
+            Assert.Equal(10, (int)Program.BinarySearch(arr, 111));
         }
         [Fact]
         public void KeyInBetween()
