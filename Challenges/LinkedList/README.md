@@ -7,6 +7,7 @@ Create a Node class that has properties for the value stored in the Node, and a 
 ## Approach & Efficiency
 - Big O Time = O(1)
 - Big O Space = O(n)
+
 New nodes are added and values assigned in one method call at O(i) time to linked list of O(n) space. Linked list is searched and displayed at O(n) time.
 
 ## API
