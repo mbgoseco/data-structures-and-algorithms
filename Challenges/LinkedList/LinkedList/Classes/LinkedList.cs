@@ -9,6 +9,10 @@ namespace LinkedLists.Classes
         public Node Head { get; set; }
         public Node Current { get; set; }
 
+        /// <summary>
+        /// Creates a new node instance inside the linked list.
+        /// </summary>
+        /// <param name="value"></param>
         public void Insert(int value)
         {
             try
@@ -23,6 +27,11 @@ namespace LinkedLists.Classes
             }
         }
 
+        /// <summary>
+        /// Determines if a given value exists in the linked list.
+        /// </summary>
+        /// <param name="value">Node Value</param>
+        /// <returns>true or false</returns>
         public bool Includes(int value)
         {
             Current = Head;
@@ -44,6 +53,9 @@ namespace LinkedLists.Classes
             return false;
         }
 
+        /// <summary>
+        /// Prints all values of linked list to the console.
+        /// </summary>
         public void Print()
         {
             Current = Head;
