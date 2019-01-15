@@ -32,6 +32,24 @@ namespace LinkedLists
                 }
                 Console.WriteLine();
 
+                int[] manyNums = { 25, 50, 75 };
+                int[] manyNumsTarget = { 5, 911, 16 };
+                for(int i = 0; i < manyNums.Length; i++)
+                {
+                    myList.InsertBefore(manyNumsTarget[i], manyNums[i]);
+                    Console.WriteLine($"{manyNums[i]} added to list before {manyNumsTarget[i]}.");
+                }
+                Console.WriteLine();
+
+                int[] suchNums = { 15, 45, 60 };
+                int[] suchNumsTarget = { 9999, -3, 75 };
+                for (int i = 0; i < manyNums.Length; i++)
+                {
+                    myList.InsertAfter(suchNumsTarget[i], suchNums[i]);
+                    Console.WriteLine($"{suchNums[i]} added to list after {suchNumsTarget[i]}.");
+                }
+                Console.WriteLine();
+
                 myList.Print();
                 Console.WriteLine();
             }

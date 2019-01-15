@@ -103,9 +103,20 @@ namespace LinkedLists.Classes
             Current.Next = node;
         }
 
+        /// <summary>
+        /// Attempts to find a target node value in the linked list and insert a new node before it.
+        /// </summary>
+        /// <param name="value">target value</param>
+        /// <param name="newValue">new node value</param>
         public void InsertBefore(int value, int newValue)
         {
             Current = Head;
+
+            if (Current.Value == value)
+            {
+                Insert(newValue);
+                return;
+            }
 
             while (Current.Next != null)
             {
@@ -113,14 +124,45 @@ namespace LinkedLists.Classes
                 {
                     Node node = new Node(newValue);
                     node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
                 }
-                Current = Current.Next;
+                else
+                {
+                    Current = Current.Next;
+                }
             }
         }
 
+        /// <summary>
+        /// Attempts to find a target node value in the linked list and insert a new node after it.
+        /// </summary>
+        /// <param name="value">target value</param>
+        /// <param name="newValue">new node value</param>
         public void InsertAfter(int value, int newValue)
         {
+            Current = Head;
 
+            while (Current.Next != null)
+            {
+                if (Current.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                    Current.Next = node;
+                    return;
+                }
+                else
+                {
+                    Current = Current.Next;
+                }
+            }
+
+            if (Current.Value == value)
+            {
+                Append(newValue);
+                return;
+            }
         }
     }
 }
