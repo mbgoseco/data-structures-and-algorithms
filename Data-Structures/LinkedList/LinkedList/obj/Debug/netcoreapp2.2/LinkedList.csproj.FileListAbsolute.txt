@@ -9,3 +9,14 @@ C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LinkedLis
 C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LinkedList\LinkedList\obj\Debug\netcoreapp2.2\LinkedList.AssemblyInfo.cs
 C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LinkedList\LinkedList\obj\Debug\netcoreapp2.2\LinkedList.dll
 C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LinkedList\LinkedList\obj\Debug\netcoreapp2.2\LinkedList.pdb
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\bin\Debug\netcoreapp2.2\LinkedList.deps.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\bin\Debug\netcoreapp2.2\LinkedList.runtimeconfig.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\bin\Debug\netcoreapp2.2\LinkedList.runtimeconfig.dev.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\bin\Debug\netcoreapp2.2\LinkedList.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\bin\Debug\netcoreapp2.2\LinkedList.pdb
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\obj\Debug\netcoreapp2.2\LinkedList.csprojAssemblyReference.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\obj\Debug\netcoreapp2.2\LinkedList.csproj.CoreCompileInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\obj\Debug\netcoreapp2.2\LinkedList.AssemblyInfoInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\obj\Debug\netcoreapp2.2\LinkedList.AssemblyInfo.cs
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\obj\Debug\netcoreapp2.2\LinkedList.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\LinkedList\LinkedList\obj\Debug\netcoreapp2.2\LinkedList.pdb

@@ -10,7 +10,7 @@ namespace LinkedLists.Classes
         public Node Current { get; set; }
 
         /// <summary>
-        /// Creates a new node instance inside the linked list.
+        /// Creates a new node instance and inserts it at the head of the linked list.
         /// </summary>
         /// <param name="value"></param>
         public void Insert(int value)
@@ -36,16 +36,21 @@ namespace LinkedLists.Classes
         {
             Current = Head;
 
-            while(Current.Next != null)
+            if (Head == null)
             {
-                if(Current.Value == value)
+                return false;
+            }
+
+            while (Current.Next != null)
+            {
+                if (Current.Value == value)
                 {
                     return true;
                 }
                 Current = Current.Next;
             }
 
-            if(Current.Value == value)
+            if (Current.Value == value)
                 {
                 return true;
             }
@@ -60,6 +65,12 @@ namespace LinkedLists.Classes
         {
             Current = Head;
 
+            if (Head == null)
+            {
+                Console.WriteLine("List has no nodes to display.");
+                return;
+            }
+
             Console.Write("Values of linked list: ");
             while (Current.Next != null)
             {
@@ -67,6 +78,49 @@ namespace LinkedLists.Classes
                 Current = Current.Next;
             }
             Console.WriteLine($"{Current.Value}");
+        }
+
+        /// <summary>
+        /// Creates a new node instance and appends it to the end of the linked list.
+        /// </summary>
+        /// <param name="value"></param>
+        public void Append(int value)
+        {
+            Current = Head;
+
+            if (Head == null)
+            {
+                Insert(value);
+                return;
+            }
+
+            while (Current.Next != null)
+            {
+                Current = Current.Next;
+            }
+
+            Node node = new Node(value);
+            Current.Next = node;
+        }
+
+        public void InsertBefore(int value, int newValue)
+        {
+            Current = Head;
+
+            while (Current.Next != null)
+            {
+                if (Current.Next.Value == value)
+                {
+                    Node node = new Node(newValue);
+                    node.Next = Current.Next;
+                }
+                Current = Current.Next;
+            }
+        }
+
+        public void InsertAfter(int value, int newValue)
+        {
+
         }
     }
 }

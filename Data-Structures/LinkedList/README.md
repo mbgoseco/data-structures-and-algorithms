@@ -10,8 +10,8 @@ Create a Node class that has properties for the value stored in the Node, and a 
 -New nodes are added and values assigned in one method call at O(i) time to linked list of O(n) space. Linked list is searched and displayed at O(n) time.
 
 ## API
--Insert(int value) - Takes in an integer and creates a new node instance and assigns it the value of that integer. Also assigns its Next property to the last node, and assigns Head to the newest node.
+-Insert(int value) - Takes in an integer and creates a new node instance with that value and assigns it to the Head of the linked list. 
 
 -Includes(int value) - Given an integer, it determines whether or not the number exists as a value in the linked list. Returns true or false.
 
--Print() - Prints the values of the entire linked list to the console.
+-Print() - Prints the values of the entire linked list to the console. If no nodes are present, it informs the user there is nothing to display.
