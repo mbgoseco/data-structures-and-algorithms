@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.271
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinkedList-KthFromEnd", "LinkedList-KthFromEnd\LinkedList-KthFromEnd.csproj", "{25101A23-2472-4835-927F-2CBBA335A975}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestLLK", "XUnitTestLLK\XUnitTestLLK.csproj", "{A2E20B0C-450F-4F5B-AF74-B15F9D3028B5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{25101A23-2472-4835-927F-2CBBA335A975}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25101A23-2472-4835-927F-2CBBA335A975}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25101A23-2472-4835-927F-2CBBA335A975}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25101A23-2472-4835-927F-2CBBA335A975}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E20B0C-450F-4F5B-AF74-B15F9D3028B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E20B0C-450F-4F5B-AF74-B15F9D3028B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E20B0C-450F-4F5B-AF74-B15F9D3028B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E20B0C-450F-4F5B-AF74-B15F9D3028B5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10565AEE-9FD3-4BED-B2EF-7E34BC36F805}
+	EndGlobalSection
+EndGlobal
