@@ -9,5 +9,5 @@ Write a method for the Linked List class which takes a number, k, as a parameter
 - Big O Space = O(1) - Aside from the list, the method needs only one new variable to measure the length of the list.
 
 ## Solution
-![whiteboard]()
+![whiteboard](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/LinkedList-KthFromEnd/assets/ll_kth_from_end.jpeg)
 ![screenshot](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/LinkedList-KthFromEnd/assets/screenshot.PNG)
