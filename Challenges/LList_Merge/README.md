@@ -9,5 +9,5 @@ Write a function called mergeLists which takes two linked lists as arguments. Zi
 - Big O Space = O(1) - No new linked lists are created for the method, only two new nodes to contain old node references before they are reassigned.
 
 ## Solution
-![whiteboard](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/LinkedList-KthFromEnd/assets/ll_kth_from_end.jpeg)
+![whiteboard](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/LList_Merge/assets/ll_merge.jpeg)
 
