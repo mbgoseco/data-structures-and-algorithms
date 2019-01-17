@@ -1,13 +1,13 @@
-# kth from the end of a Linked List
-An project extending the functionality of the Linked List app to include a method to find the node value of a node at k places from the end of a linked list.
+# LList_Merge
+An project extending the functionality of the Linked List app to include a method to zipper merge two linked lists together and return one.
 
 ## Challenge
-Write a method for the Linked List class which takes a number, k, as a parameter. Return the node’s value that is k from the end of the linked list. You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
 ## Approach & Efficiency
-- Big O Time = O(n) - The method must first traverse the entire list to measure the length, then loop again through it a fixed number of times for the length - k - 1, in order to find the correct node.
-- Big O Space = O(1) - Aside from the list, the method needs only one new variable to measure the length of the list.
+- Big O Time = O(n) - The method will traverse at least the shortest list length before returning a result.
+- Big O Space = O(1) - No new linked lists are created for the method, only two new nodes to contain old node references before they are reassigned.
 
 ## Solution
 ![whiteboard](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/LinkedList-KthFromEnd/assets/ll_kth_from_end.jpeg)
-![screenshot](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/LinkedList-KthFromEnd/assets/screenshot.PNG)
+
