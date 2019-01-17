@@ -1,0 +1,14 @@
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\bin\Debug\netcoreapp2.2\LList_Merge.deps.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\bin\Debug\netcoreapp2.2\LList_Merge.runtimeconfig.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\bin\Debug\netcoreapp2.2\LList_Merge.runtimeconfig.dev.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\bin\Debug\netcoreapp2.2\LList_Merge.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\bin\Debug\netcoreapp2.2\LList_Merge.pdb
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\bin\Debug\netcoreapp2.2\LinkedList.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\bin\Debug\netcoreapp2.2\LinkedList.pdb
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\obj\Debug\netcoreapp2.2\LList_Merge.csprojAssemblyReference.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\obj\Debug\netcoreapp2.2\LList_Merge.csproj.CoreCompileInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\obj\Debug\netcoreapp2.2\LList_Merge.AssemblyInfoInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\obj\Debug\netcoreapp2.2\LList_Merge.AssemblyInfo.cs
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\obj\Debug\netcoreapp2.2\LList_Merge.csproj.CopyComplete
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\obj\Debug\netcoreapp2.2\LList_Merge.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\LList_Merge\LList_Merge\obj\Debug\netcoreapp2.2\LList_Merge.pdb
