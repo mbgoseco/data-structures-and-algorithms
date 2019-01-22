@@ -1,0 +1,11 @@
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\bin\Debug\netcoreapp2.2\StacksAndQueues.deps.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\bin\Debug\netcoreapp2.2\StacksAndQueues.runtimeconfig.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\bin\Debug\netcoreapp2.2\StacksAndQueues.runtimeconfig.dev.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\bin\Debug\netcoreapp2.2\StacksAndQueues.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\bin\Debug\netcoreapp2.2\StacksAndQueues.pdb
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\obj\Debug\netcoreapp2.2\StacksAndQueues.csprojAssemblyReference.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\obj\Debug\netcoreapp2.2\StacksAndQueues.csproj.CoreCompileInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\obj\Debug\netcoreapp2.2\StacksAndQueues.AssemblyInfoInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\obj\Debug\netcoreapp2.2\StacksAndQueues.AssemblyInfo.cs
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\obj\Debug\netcoreapp2.2\StacksAndQueues.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Data-Structures\StacksAndQueues\StacksAndQueues\obj\Debug\netcoreapp2.2\StacksAndQueues.pdb

@@ -9,6 +9,13 @@ namespace StacksAndQueues.Classes
         public Node Front { get; set; }
         public Node Rear { get; set; }
 
+        // Creates a queue with one node
+        public Queue(Node node)
+        {
+            Front = node;
+            Rear = node;
+        }
+
         // Creates a new node and sets it at the end of the queue
         public void Enqueue(int value)
         {
