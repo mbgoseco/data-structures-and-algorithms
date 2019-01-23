@@ -15,15 +15,27 @@ namespace XUnitTestQWS
 
             test.Enqueue(0);
             Assert.Equal(0, test.PQueue.Top.Value);
+        }
 
+        [Fact]
+        public void TwoEnqueueNodesPushToTop()
+        {
+            PseudoQueue test = new PseudoQueue();
+
+            test.Enqueue(0);
             test.Enqueue(1);
             Assert.Equal(1, test.PQueue.Top.Value);
+        }
 
+        [Fact]
+        public void ThreeEnqueueNodesPushToTop()
+        {
+            PseudoQueue test = new PseudoQueue();
+
+            test.Enqueue(0);
+            test.Enqueue(1);
             test.Enqueue(2);
             Assert.Equal(2, test.PQueue.Top.Value);
-
-            test.Enqueue(3);
-            Assert.Equal(3, test.PQueue.Top.Value);
         }
 
         [Fact]
