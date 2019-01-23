@@ -1,0 +1,14 @@
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp2.2\QueueWithStacks.deps.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp2.2\QueueWithStacks.runtimeconfig.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp2.2\QueueWithStacks.runtimeconfig.dev.json
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp2.2\QueueWithStacks.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp2.2\QueueWithStacks.pdb
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp2.2\StacksAndQueues.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\bin\Debug\netcoreapp2.2\StacksAndQueues.pdb
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp2.2\QueueWithStacks.csprojAssemblyReference.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp2.2\QueueWithStacks.csproj.CoreCompileInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp2.2\QueueWithStacks.AssemblyInfoInputs.cache
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp2.2\QueueWithStacks.AssemblyInfo.cs
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp2.2\QueueWithStacks.csproj.CopyComplete
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp2.2\QueueWithStacks.dll
+C:\Users\MBG\codefellows\401\data-structures-and-algorithms\Challenges\QueueWithStacks\QueueWithStacks\obj\Debug\netcoreapp2.2\QueueWithStacks.pdb

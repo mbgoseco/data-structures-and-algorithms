@@ -40,7 +40,14 @@ namespace StacksAndQueues.Classes
         // Shows the value of the top node on the stack
         public int Peek()
         {
-            return Top.Value;
+            try
+            {
+                return Top.Value;
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }
