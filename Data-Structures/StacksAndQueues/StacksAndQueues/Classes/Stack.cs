@@ -8,19 +8,27 @@ namespace StacksAndQueues.Classes
     {
         public Node Top { get; set; }
 
-        // Creates a stack with one node
+        /// <summary>
+        /// Creates a stack with one node
+        /// </summary>
+        /// <param name="node"></param>
         public Stack(Node node)
         {
             Top = node;
         }
 
-        // Creates an empty stack
+        /// <summary>
+        /// Creates an empty stack
+        /// </summary>
         public Stack()
         {
 
         }
 
-        // Creates a new node and puts it at the top of the stack
+        /// <summary>
+        /// Creates a new node and puts it at the top of the stack
+        /// </summary>
+        /// <param name="value">int value for node</param>
         public void Push(int value)
         {
             Node node = new Node(value);
@@ -28,7 +36,10 @@ namespace StacksAndQueues.Classes
             Top = node;
         }
 
-        // Creates a temp node, sets Top to the next node in the stack, clears the reference of next on temp, and returns the temp node's value.
+        /// <summary>
+        /// Creates a temp node, sets Top to the next node in the stack, clears the reference of next on temp, and returns the temp node's value.
+        /// </summary>
+        /// <returns>popped node value</returns>
         public int Pop()
         {
             Node temp = Top;
@@ -37,7 +48,10 @@ namespace StacksAndQueues.Classes
             return temp.Value;
         }
 
-        // Shows the value of the top node on the stack
+        /// <summary>
+        /// Shows the value of the top node on the stack
+        /// </summary>
+        /// <returns>top node's value</returns>
         public int Peek()
         {
             return Top.Value;

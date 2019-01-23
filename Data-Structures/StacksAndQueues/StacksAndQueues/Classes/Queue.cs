@@ -9,14 +9,20 @@ namespace StacksAndQueues.Classes
         public Node Front { get; set; }
         public Node Rear { get; set; }
 
-        // Creates a queue with one node
+        /// <summary>
+        /// Creates a queue with one node
+        /// </summary>
+        /// <param name="node">node object</param>
         public Queue(Node node)
         {
             Front = node;
             Rear = node;
         }
 
-        // Creates a new node and sets it at the end of the queue
+        /// <summary>
+        /// Creates a new node and sets it at the end of the queue
+        /// </summary>
+        /// <param name="value">value for new node</param>
         public void Enqueue(int value)
         {
             Node node = new Node(value);
@@ -24,7 +30,10 @@ namespace StacksAndQueues.Classes
             Rear = node;
         }
 
-        // Removes the node at the front of the queue and returns its value
+        /// <summary>
+        /// Removes the node at the front of the queue and returns its value
+        /// </summary>
+        /// <returns>removed node's value</returns>
         public int Dequeue()
         {
             Node temp = Front;
@@ -33,7 +42,10 @@ namespace StacksAndQueues.Classes
             return temp.Value;
         }
 
-        // Returns the node value at the front of the queue
+        /// <summary>
+        /// Removes the node at the front of the queue and returns its value
+        /// </summary>
+        /// <returns>front node value</returns>
         public int Peek()
         {
             return Front.Value;
