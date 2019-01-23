@@ -36,7 +36,14 @@ namespace StacksAndQueues.Classes
         // Returns the node value at the front of the queue
         public int Peek()
         {
-            return Front.Value;
+            try
+            {
+                return Front.Value;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }
