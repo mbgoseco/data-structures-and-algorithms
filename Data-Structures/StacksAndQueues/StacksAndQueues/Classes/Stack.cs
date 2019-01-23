@@ -54,7 +54,14 @@ namespace StacksAndQueues.Classes
         /// <returns>top node's value</returns>
         public int Peek()
         {
-            return Top.Value;
+            try
+            {
+                return Top.Value;
+            }
+            catch(Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }

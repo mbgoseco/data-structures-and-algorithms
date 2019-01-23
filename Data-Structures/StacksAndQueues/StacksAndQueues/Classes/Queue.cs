@@ -48,7 +48,14 @@ namespace StacksAndQueues.Classes
         /// <returns>front node value</returns>
         public int Peek()
         {
-            return Front.Value;
+            try
+            {
+                return Front.Value;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }
