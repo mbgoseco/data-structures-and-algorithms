@@ -61,12 +61,18 @@ namespace AnimalShelter.Classes
                 Queue.Front = Queue.Front.Next;
                 tempQueue.Enqueue(temp.Value);
             }
-            if (Queue.Front.Value == pref.Value)
+            if (Queue.Front.Next == null)
             {
-                Animal firstTemp = Queue.Front;
+                if (Queue.Front.Value == pref.Value)
+                {
+                    Animal firstTemp = Queue.Front;
+                    Queue.Front = Queue.Front.Next;
+                    firstTemp.Next = null;
+                    return firstTemp;
+                }
+                Animal temp = Queue.Front;
                 Queue.Front = Queue.Front.Next;
-                firstTemp.Next = null;
-                return firstTemp;
+                tempQueue.Enqueue(temp.Value);
             }
 
             return null;
