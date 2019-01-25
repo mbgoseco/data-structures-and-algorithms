@@ -33,28 +33,49 @@ namespace MultiBracketValidation
                         break;
                     case ')':
                         if (i == 0) { return false; }   // If first char is a closing bracket then always false
-                        if (validator.Top.Value == charString[i])
+                        if (validator.Top.Value == '(')
                         {
                             validator.Pop();
+                        }
+                        else
+                        {
+                            validator.Push(charString[i]);
                         }
                         break;
                     case ']':
                         if (i == 0) { return false; }
-                        if (validator.Top.Value == charString[i])
+                        if (validator.Top.Value == '[')
                         {
                             validator.Pop();
+                        }
+                        else
+                        {
+                            validator.Push(charString[i]);
                         }
                         break;
                     case '}':
                         if (i == 0) { return false; }
-                        if (validator.Top.Value == charString[i])
+                        if (validator.Top.Value == '{')
                         {
                             validator.Pop();
+                        }
+                        else
+                        {
+                            validator.Push(charString[i]);
                         }
                         break;
                     default:
                         break;
                 }
+            }
+
+            if (validator.Top == null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
             }
 
         }
