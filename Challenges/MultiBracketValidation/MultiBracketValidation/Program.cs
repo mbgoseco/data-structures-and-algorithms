@@ -31,13 +31,7 @@ namespace MultiBracketValidation
                 switch (charString[i])
                 {
                     case '(':
-                        validator.Push(charString[i]);
-                        hasBrackets = true;
-                        break;
                     case '[':
-                        validator.Push(charString[i]);
-                        hasBrackets = true;
-                        break;
                     case '{':
                         validator.Push(charString[i]);
                         hasBrackets = true;
