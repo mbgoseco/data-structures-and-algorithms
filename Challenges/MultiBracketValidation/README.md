@@ -13,4 +13,4 @@ Big O Space = O(n)
 - The method creates both an array and a stack which must be iterated over based on the size of input string and the number of brackets respecively. Thus, Big O time and space are both O(n).
 
 ## Solution
-![whiteboard]()
+![whiteboard](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/MultiBracketValidation/assets/multi-bracket-validation.JPG)
