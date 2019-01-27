@@ -62,8 +62,8 @@ namespace HappyTrees
 
             Console.WriteLine();
 
-            Console.WriteLine($"Does 4 exist in the tree of 1-6? {BSTree.Contains(BSTree.Root, 4)}");
-            Console.WriteLine($"Does 7 exist in the tree of 1-6? {BSTree.Contains(BSTree.Root, 7)}");
+            Console.WriteLine($"Does 4 exist in the tree of 1-6? {BSTree.Contains(4)}");
+            Console.WriteLine($"Does 7 exist in the tree of 1-6? {BSTree.Contains(7)}");
 
         }
     }

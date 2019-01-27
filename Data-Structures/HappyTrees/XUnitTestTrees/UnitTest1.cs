@@ -162,27 +162,100 @@ namespace XUnitTestTrees
             Assert.Equal(1, result[0]);
         }
 
-        //// BST Add tests
-        //[Fact]
-        //public void AddTwoBetweenOneAndThree()
-        //{
-        //    Node node = new Node(3);
-        //    node.Left = new Node(1);
-        //    BinarySearchTree test = new BinarySearchTree(node);
+        // BST Add tests
+        [Fact]
+        public void AddTwoBetweenOneAndThree()
+        {
+            Node node = new Node(3);
+            node.Left = new Node(1);
+            BinarySearchTree test = new BinarySearchTree(node);
 
-        //    test.Add(node, 2);
+            test.Add(node, 2);
 
-        //    Assert.Equal(2, test.Root.Left.Right.Value);
-        //}
+            Assert.Equal(2, test.Root.Left.Right.Value);
+        }
 
-        //[Fact]
-        //public void AddOneToEmptyTree()
-        //{
-        //    BinarySearchTree test = new BinarySearchTree();
+        [Fact]
+        public void AddOneToEmptyTree()
+        {
+            BinarySearchTree test = new BinarySearchTree();
 
-        //    test.Add(new Node(), 1);
+            test.Add(new Node(), 1);
 
-        //    Assert.Equal(1, test.Root.Value);
-        //}
+            Assert.Equal(1, test.Root.Value);
+        }
+
+        [Fact]
+        public void AddDupesToLeft()
+        {
+            BinarySearchTree test = new BinarySearchTree();
+
+            test.Add(new Node(), 5);
+            test.Add(test.Root, 2);
+            test.Add(test.Root, 7);
+            test.Add(test.Root, 3);
+            test.Add(test.Root, 3);
+
+            Assert.Equal(3, test.Root.Left.Right.Value);
+            Assert.Equal(3, test.Root.Left.Right.Left.Value);
+        }
+
+        // BST Contains tests
+        [Fact]
+        public void FoundOnRightSide()
+        {
+            BinarySearchTree test = new BinarySearchTree();
+
+            test.Add(test.Root, 5);
+            test.Add(test.Root, 2);
+            test.Add(test.Root, 7);
+            test.Add(test.Root, 3);
+            test.Add(test.Root, 4);
+            test.Add(test.Root, 9);
+            test.Add(test.Root, 11);
+            test.Add(test.Root, 8);
+
+            bool result = test.Contains(8);
+
+            Assert.True(result);
+        }
+
+        [Fact]
+        public void NotFoundInTree()
+        {
+            BinarySearchTree test = new BinarySearchTree();
+
+            test.Add(test.Root, 5);
+            test.Add(test.Root, 2);
+            test.Add(test.Root, 7);
+            test.Add(test.Root, 3);
+            test.Add(test.Root, 4);
+            test.Add(test.Root, 9);
+            test.Add(test.Root, 11);
+            test.Add(test.Root, 8);
+
+            bool result = test.Contains(6);
+
+            Assert.False(result);
+        }
+
+        [Fact]
+        public void FoundOnFirstNode()
+        {
+            BinarySearchTree test = new BinarySearchTree();
+
+            test.Add(test.Root, 5);
+            test.Add(test.Root, 2);
+            test.Add(test.Root, 7);
+            test.Add(test.Root, 3);
+            test.Add(test.Root, 4);
+            test.Add(test.Root, 9);
+            test.Add(test.Root, 11);
+            test.Add(test.Root, 8);
+
+            bool result = test.Contains(5);
+
+            Assert.True(result);
+        }
     }
 }

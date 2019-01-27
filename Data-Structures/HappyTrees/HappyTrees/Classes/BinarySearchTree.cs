@@ -37,10 +37,10 @@ namespace HappyTrees.Classes
             {
                 Node node = new Node(value);
                 
-                if (root == null)
+                if (Root == null)
                 {
-                    root = node;
-                    return Root = node;
+                    Root = node;
+                    return node;
                 }
 
                 Node parent = null;
@@ -80,25 +80,25 @@ namespace HappyTrees.Classes
         /// <param name="root">Root of the binary search tree</param>
         /// <param name="value">Target node value to search for</param>
         /// <returns>True if found, false if not</returns>
-        public bool Contains(Node root, int value)
+        public bool Contains(int value)
         {
             try
             {
-                if (root.Value == value) { return true; }
+                if (Root.Value == value) { return true; }
 
-                while (root != null)
+                while (Root != null)
                 {
-                    if (root.Value == value)
+                    if (Root.Value == value)
                     {
                         return true;
                     }
-                    else if (value < root.Value)
+                    else if (value < Root.Value)
                     {
-                        root = root.Left;
+                        Root = Root.Left;
                     }
-                    else if (value > root.Value)
+                    else if (value > Root.Value)
                     {
-                        root = root.Right;
+                        Root = Root.Right;
                     }
                 }
             }
