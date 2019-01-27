@@ -77,7 +77,6 @@ namespace HappyTrees.Classes
         /// <summary>
         /// Searches the tree for a matching node value, traversing left if the target value is less than the node value, or right if the target value is greater than the node value. Returns true is target is found, false if not.
         /// </summary>
-        /// <param name="root">Root of the binary search tree</param>
         /// <param name="value">Target node value to search for</param>
         /// <returns>True if found, false if not</returns>
         public bool Contains(int value)
