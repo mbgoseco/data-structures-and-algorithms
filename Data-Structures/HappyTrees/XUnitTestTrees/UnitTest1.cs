@@ -162,27 +162,27 @@ namespace XUnitTestTrees
             Assert.Equal(1, result[0]);
         }
 
-        // BST Add tests
-        [Fact]
-        public void AddTwoBetweenOneAndThree()
-        {
-            Node node = new Node(3);
-            node.Left = new Node(1);
-            BinarySearchTree test = new BinarySearchTree(node);
+        //// BST Add tests
+        //[Fact]
+        //public void AddTwoBetweenOneAndThree()
+        //{
+        //    Node node = new Node(3);
+        //    node.Left = new Node(1);
+        //    BinarySearchTree test = new BinarySearchTree(node);
 
-            test.Add(node, 2);
+        //    test.Add(node, 2);
 
-            Assert.Equal(2, test.Root.Left.Right.Value);
-        }
+        //    Assert.Equal(2, test.Root.Left.Right.Value);
+        //}
 
-        [Fact]
-        public void AddOneToEmptyTree()
-        {
-            BinarySearchTree test = new BinarySearchTree();
+        //[Fact]
+        //public void AddOneToEmptyTree()
+        //{
+        //    BinarySearchTree test = new BinarySearchTree();
 
-            test.Add(new Node(), 1);
+        //    test.Add(new Node(), 1);
 
-            Assert.Equal(1, test.Root.Value);
-        }
+        //    Assert.Equal(1, test.Root.Value);
+        //}
     }
 }

@@ -43,18 +43,18 @@ namespace HappyTrees
 
             Console.WriteLine();
 
-            Node BSRoot = new Node(1);
-            BinarySearchTree BSTree = new BinarySearchTree(BSRoot);
-            BSTree.Add(BSRoot, 2);
-            BSTree.Add(BSRoot, 3);
-            BSTree.Add(BSRoot, 4);
-            BSTree.Add(BSRoot, 5);
-            BSTree.Add(BSRoot, 6);
+            BinarySearchTree BSTree = new BinarySearchTree();
+            BSTree.Add(BSTree.Root, 1);
+            BSTree.Add(BSTree.Root, 2);
+            BSTree.Add(BSTree.Root, 3);
+            BSTree.Add(BSTree.Root, 4);
+            BSTree.Add(BSTree.Root, 5);
+            BSTree.Add(BSTree.Root, 6);
 
 
-            BinaryTree BST = new BinaryTree(BSRoot);
+            BinaryTree BST = new BinaryTree(BSTree.Root);
 
-            int[] result3 = BST.InOrder(BSRoot);
+            int[] result3 = BST.InOrder(BST.Root);
             foreach (int i in result3)
             {
                 Console.Write($"[{i}]");
@@ -62,8 +62,8 @@ namespace HappyTrees
 
             Console.WriteLine();
 
-            Console.WriteLine($"Does 4 exist in the tree of 1-6? {BSTree.Contains(BSRoot, 4)}");
-            Console.WriteLine($"Does 7 exist in the tree of 1-6? {BSTree.Contains(BSRoot, 7)}");
+            Console.WriteLine($"Does 4 exist in the tree of 1-6? {BSTree.Contains(BSTree.Root, 4)}");
+            Console.WriteLine($"Does 7 exist in the tree of 1-6? {BSTree.Contains(BSTree.Root, 7)}");
 
         }
     }

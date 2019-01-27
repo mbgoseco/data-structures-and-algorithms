@@ -16,7 +16,7 @@ namespace HappyTrees.Classes
             }
             else
             {
-                Add(node, node.Value);
+                Add(Root, node.Value);
             }
         }
 
@@ -35,29 +35,42 @@ namespace HappyTrees.Classes
         {
             try
             {
+                Node node = new Node(value);
+                
                 if (root == null)
                 {
-                    root = new Node(value);
-                    Root = root;
+                    root = node;
+                    return Root = node;
                 }
-                else if (root.Value == value)
+
+                Node parent = null;
+
+                while (root != null)
                 {
-                    root.Left = Add(root.Left, value);
+                    parent = root;
+                    if (value < root.Value)
+                    {
+                        root = root.Left;
+                    }
+                    else
+                    {
+                        root = root.Right;
+                    }
                 }
-                else if (value < root.Value)
+
+                if(value <= parent.Value)
                 {
-                    root.Left = Add(root.Left, value);
+                    parent.Left = node;
                 }
-                else if (value > root.Value)
+                else
                 {
-                    root.Right = Add(root.Right, value);
+                    parent.Right = node;
                 }
             }
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
             }
-
             return root;
         }
 
