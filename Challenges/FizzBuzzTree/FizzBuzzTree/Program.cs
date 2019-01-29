@@ -18,9 +18,7 @@ namespace FizzBuzzTree
             FBTree.Right.Left = new Node(8);
             FBTree.Right.Right = new Node(45);
 
-            BinaryTree tree = new BinaryTree(FBTree);
-
-            object[] result = FizzBuzzTree(tree.Root);
+            object[] result = FizzBuzzTree(FBTree);
 
             foreach (object i in result)
             {
