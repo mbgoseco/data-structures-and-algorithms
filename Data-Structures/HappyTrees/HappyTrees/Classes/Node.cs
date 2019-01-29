@@ -6,7 +6,7 @@ namespace HappyTrees.Classes
 {
     public class Node
     {
-        public int Value { get; set; }
+        public object Value { get; set; }
         public Node Left { get; set; }
         public Node Right { get; set; }
 
@@ -15,7 +15,7 @@ namespace HappyTrees.Classes
 
         }
 
-        public Node(int value)
+        public Node(object value)
         {
             Value = value;
         }

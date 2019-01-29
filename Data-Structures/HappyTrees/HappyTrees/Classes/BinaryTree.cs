@@ -7,7 +7,7 @@ namespace HappyTrees.Classes
     public class BinaryTree
     {
         public Node Root { get; set; }
-        public List<int> ArrayList = new List<int>();
+        public List<object> ArrayList = new List<object>();
 
         public BinaryTree(Node node)
         {
@@ -24,7 +24,7 @@ namespace HappyTrees.Classes
         /// </summary>
         /// <param name="root">Root node of binary tree</param>
         /// <returns>Array of node values</returns>
-        public int[] PreOrder(Node root)
+        public object[] PreOrder(Node root)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace HappyTrees.Classes
         /// </summary>
         /// <param name="root">Root node of binary tree</param>
         /// <returns>Array of node values</returns>
-        public int[] InOrder(Node root)
+        public object[] InOrder(Node root)
         {
             try
             {
@@ -82,7 +82,7 @@ namespace HappyTrees.Classes
         /// </summary>
         /// <param name="root">Root node of binary tree</param>
         /// <returns>Array of node values</returns>
-        public int[] PostOrder(Node root)
+        public object[] PostOrder(Node root)
         {
             try
             {
