@@ -18,7 +18,7 @@ namespace XUnitTestTrees
             node.Left.Right = new Node(4);
             node.Right = new Node(5);
 
-            int[] result = test.PreOrder(node);
+            object[] result = test.PreOrder(node);
 
             Assert.Equal(1, result[0]);
             Assert.Equal(2, result[1]);
@@ -37,7 +37,7 @@ namespace XUnitTestTrees
             node.Right.Right.Right = new Node(4);
             node.Right.Right.Right.Right = new Node(5);
 
-            int[] result = test.PreOrder(node);
+            object[] result = test.PreOrder(node);
 
             Assert.Equal(1, result[0]);
             Assert.Equal(2, result[1]);
@@ -52,7 +52,7 @@ namespace XUnitTestTrees
             BinaryTree test = new BinaryTree();
             Node node = new Node(1);
 
-            int[] result = test.PreOrder(node);
+            object[] result = test.PreOrder(node);
 
             Assert.Equal(1, result[0]);
         }
@@ -68,7 +68,7 @@ namespace XUnitTestTrees
             node.Left.Right = new Node(4);
             node.Right = new Node(5);
 
-            int[] result = test.InOrder(node);
+            object[] result = test.InOrder(node);
 
             Assert.Equal(3, result[0]);
             Assert.Equal(2, result[1]);
@@ -90,7 +90,7 @@ namespace XUnitTestTrees
             node.Right.Right.Right = new Node(7);
 
 
-            int[] result = test.InOrder(node);
+            object[] result = test.InOrder(node);
 
             Assert.Equal(4, result[0]);
             Assert.Equal(3, result[1]);
@@ -107,7 +107,7 @@ namespace XUnitTestTrees
             BinaryTree test = new BinaryTree();
             Node node = new Node(1);
 
-            int[] result = test.InOrder(node);
+            object[] result = test.InOrder(node);
 
             Assert.Equal(1, result[0]);
         }
@@ -123,7 +123,7 @@ namespace XUnitTestTrees
             node.Left.Right = new Node(4);
             node.Right = new Node(5);
 
-            int[] result = test.PostOrder(node);
+            object[] result = test.PostOrder(node);
 
             Assert.Equal(3, result[0]);
             Assert.Equal(4, result[1]);
@@ -142,7 +142,7 @@ namespace XUnitTestTrees
             node.Left.Right.Left = new Node(4);
             node.Left.Right.Left.Right = new Node(5);
 
-            int[] result = test.PostOrder(node);
+            object[] result = test.PostOrder(node);
 
             Assert.Equal(5, result[0]);
             Assert.Equal(4, result[1]);
@@ -157,7 +157,7 @@ namespace XUnitTestTrees
             BinaryTree test = new BinaryTree();
             Node node = new Node(1);
 
-            int[] result = test.PostOrder(node);
+            object[] result = test.PostOrder(node);
 
             Assert.Equal(1, result[0]);
         }
