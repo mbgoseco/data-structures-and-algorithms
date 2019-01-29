@@ -58,7 +58,7 @@ namespace HappyTrees.Classes
                     }
                 }
 
-                if ((int)value <= (int)parent.Value)
+                if((int)value <= (int)parent.Value)
                 {
                     parent.Left = node;
                 }
