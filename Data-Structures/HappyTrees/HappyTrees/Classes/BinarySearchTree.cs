@@ -31,7 +31,7 @@ namespace HappyTrees.Classes
         /// <param name="root">Root of the binary search tree</param>
         /// <param name="value">Value of the node to create in order on the tree</param>
         /// <returns>New node</returns>
-        public Node Add(Node root, int value)
+        public Node Add(Node root, object value)
         {
             try
             {
@@ -48,7 +48,7 @@ namespace HappyTrees.Classes
                 while (root != null)
                 {
                     parent = root;
-                    if (value < root.Value)
+                    if ((int)value < (int)root.Value)
                     {
                         root = root.Left;
                     }
@@ -58,7 +58,7 @@ namespace HappyTrees.Classes
                     }
                 }
 
-                if(value <= parent.Value)
+                if((int)value <= (int)parent.Value)
                 {
                     parent.Left = node;
                 }
@@ -83,19 +83,19 @@ namespace HappyTrees.Classes
         {
             try
             {
-                if (Root.Value == value) { return true; }
+                if ((int)Root.Value == (int)value) { return true; }
 
                 while (Root != null)
                 {
-                    if (Root.Value == value)
+                    if ((int)Root.Value == (int)value)
                     {
                         return true;
                     }
-                    else if (value < Root.Value)
+                    else if ((int)value < (int)Root.Value)
                     {
                         Root = Root.Left;
                     }
-                    else if (value > Root.Value)
+                    else if ((int)value > (int)Root.Value)
                     {
                         Root = Root.Right;
                     }

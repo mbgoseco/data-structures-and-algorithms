@@ -18,7 +18,7 @@ namespace HappyTrees
             BinaryTree tree = new BinaryTree(node);
             BinaryTree tree2 = new BinaryTree(node);
 
-            int[] result = tree.PreOrder(node);
+            object[] result = tree.PreOrder(node);
             foreach(int i in result)
             {
                 Console.Write($"[{i}]");
@@ -27,7 +27,7 @@ namespace HappyTrees
             Console.WriteLine();
             tree.ArrayList.Clear();
 
-            int[] resultIn = tree.InOrder(node);
+            object[] resultIn = tree.InOrder(node);
             foreach (int i in resultIn)
             {
                 Console.Write($"[{i}]");
@@ -35,7 +35,7 @@ namespace HappyTrees
 
             Console.WriteLine();
 
-            int[] result2 = tree2.PostOrder(node);
+            object[] result2 = tree2.PostOrder(node);
             foreach (int i in result2)
             {
                 Console.Write($"[{i}]");
@@ -54,7 +54,7 @@ namespace HappyTrees
 
             BinaryTree BST = new BinaryTree(BSTree.Root);
 
-            int[] result3 = BST.InOrder(BST.Root);
+            object[] result3 = BST.InOrder(BST.Root);
             foreach (int i in result3)
             {
                 Console.Write($"[{i}]");
