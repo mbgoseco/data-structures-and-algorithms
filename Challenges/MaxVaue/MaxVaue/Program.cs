@@ -40,7 +40,7 @@ namespace MaxVaue
             {
                 if (root == null)
                 {
-                    return int.MinValue;
+                    return max;
                 }
 
                 max = (int)root.Value;
