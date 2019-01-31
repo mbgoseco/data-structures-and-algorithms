@@ -1,13 +1,13 @@
-# Breadth-first
-This app demonstrates the breadth first method of binary tree traversal. Given an example tree, it will print out the node values of that tree, in order of each level, from the top down.
+# Find the Maximum Value in a Binary Tree
+This app finds the greatest integer node value in a given binary tree. The method designed in this program will recursively traverse the array, comparing node values as it returns, and then output the highest value.
 
 ## Challenge
-- Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach; print every visited node’s value.
+- Write a function called find-maximum-value which takes binary tree as its only input. Without utilizing any of the built-in methods available to your language, return the maximum value stored in the tree. You can assume that the values stored in the Binary Tree will be numeric.
 
 ## Approach & Efficiency
-- Big O Space = O(w)
+- Big O Space = O(h)
 - Big O Time = O(n)
-With this method, a queue is created to take in each node as it traverses each layer of the tree using a while loop. It begins by Enqueuing the root node, then Dequeuing and storing it as a Front node. That Front node value is printed and store to a list, then the Front node is checked for having left children then right children. If those children exist, they will be Enqueued in left-then-right order and the process will repeat while a node still exists in the queue.
+This method uses a recursive approach to traverse the array. Before this happens however, it defines a max int value as the lowest possible int value. It then checks if the starting root is null and returns max if true, or sets max as the root value if false. Traversal begins as a variable is assigned to the return value of the recursive call of FindMaxValue() on the left child, and a variable for the recursive call of the right child. The node values are compared to the max as each return is made from a leaf node, until it finally reaches the last node and returns the max value.
 
 ## Solution
-![whiteboard](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/BreadthFirstTraversal/assets/breadth-first-traversal.jpg)
+![whiteboard](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/MaxVaue/assets/find-maximum-value-binary-tree.jpg)
