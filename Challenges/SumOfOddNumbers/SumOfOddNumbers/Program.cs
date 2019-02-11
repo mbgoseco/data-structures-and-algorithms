@@ -40,22 +40,29 @@ namespace SumOfOddNumbers
             Queue<Node> tree = new Queue<Node>();
             tree.Enqueue(root);
 
-            while (tree.Count > 0)
+            try
             {
-                Node front = tree.Dequeue();
-                if ((int)front.Value % 2 != 0)
+                while (tree.Count > 0)
                 {
-                    sum += (int)front.Value;
-                }
+                    Node front = tree.Dequeue();
+                    if ((int)front.Value % 2 != 0)
+                    {
+                        sum += (int)front.Value;
+                    }
 
-                if (front.Left != null)
-                {
-                    tree.Enqueue(front.Left);
+                    if (front.Left != null)
+                    {
+                        tree.Enqueue(front.Left);
+                    }
+                    if (front.Right != null)
+                    {
+                        tree.Enqueue(front.Right);
+                    }
                 }
-                if (front.Right != null)
-                {
-                    tree.Enqueue(front.Right);
-                }
+            }
+            catch (Exception e)
+            {
+                throw e;
             }
 
             return sum;

@@ -24,5 +24,23 @@ namespace XUnitTestSOON
 
             Assert.Equal(33, result);
         }
+
+        [Fact]
+        public void OneNodeTreeOdd()
+        {
+            Node node = new Node(5);
+
+            int result = Program.SumOfOddNodes(node);
+
+            Assert.Equal(5, result);
+        }
+
+        [Fact]
+        public void TreeWithEmptyNode()
+        {
+            Node node = new Node();
+            
+            Assert.Throws<NullReferenceException>(() => Program.SumOfOddNodes(node));
+        }
     }
 }
