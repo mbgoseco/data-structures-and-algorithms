@@ -10,4 +10,4 @@ The design of the method first traverses the entire list to measure its length. 
 - Big O Space = O(1)
 
 ## Solution
-![whiteboard]()
+![whiteboard](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/ShuffleLinkedList/Assets/ShuffleLinkedList.jpg)
