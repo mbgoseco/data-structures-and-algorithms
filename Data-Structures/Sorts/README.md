@@ -1,5 +1,5 @@
 # Insertion Sort
-This app demonstrates the behind an insertion sort algorithm. Here, a method is built to take in an array of integers and return them in ascending order. Also includes cases for a single element or empty array.
+This app demonstrates the process behind an insertion sort algorithm. Here, a method is built to take in an array of integers and return them in ascending order. Also includes cases for a single element or empty array.
 
 ## Challenge
 Write a method for insertion sort that takes in an unsorted array and returns the array sorted using insertion sort.
