@@ -8,19 +8,5 @@ namespace HashTables.Classes
     {
         public HashNode Head { get; set; }
         public HashNode Current { get; set; }
-
-        public void Insert(string key, string value)
-        {
-            try
-            {
-                HashNode node = new HashNode(key, value);
-                node.Next = Head;
-                Head = node;
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-        }
     }
 }

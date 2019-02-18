@@ -33,6 +33,10 @@ namespace HashTables
             Console.WriteLine($"{table.Contains(keyThree)}");
             Console.WriteLine($"{table.Get(keyThree)}");
             Console.WriteLine();
+
+            Console.WriteLine($"{table.Contains("words")}");
+            Console.WriteLine($"{table.Get("words")}");
+            Console.WriteLine();
         }
     }
 }
