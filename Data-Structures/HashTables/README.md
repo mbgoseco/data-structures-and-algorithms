@@ -11,6 +11,7 @@ Implement a Hashtable with the following methods:
 ## Approach & Efficiency
 * Big O Space = O(n)
 * Big O Time = O(n) (Average O(1))
+
 The approach I took had me first build out a new linked list and node structure to contain properties for both key and value values. From there I built the hashtable class to instantate a linked list array of 100 size for each hashtable instance. Hash values are built based on the unicode values of the key string, multiplied by 103 then moduloed by 100 (the range of the array). Adding a new key/value pair creates a node of their properties, gets a hash for the index, and adds the node to the linked list matching the hashtable's index. Searching for a key begins the same in getting a hash index from the key, then travesres the linked list at that index to find a matching key.
 
 ## API
