@@ -6,7 +6,7 @@ namespace HashTables.Classes
 {
     public class HashTable
     {
-        HashLinkedList[] hashTable = new HashLinkedList[100];
+        public HashLinkedList[] hashTable { get; set; } = new HashLinkedList[100]; 
 
         /// <summary>
         /// Takes in a key/value pair, creates a hash value out of the key, and inserts the pair as a node into a linked list in the hash table at the index matching the hash value.
@@ -43,31 +43,38 @@ namespace HashTables.Classes
 
             int index = Hash(key);
 
-            if (hashTable[index] == null)
+            try
             {
-                return "No value found matching that key";
-            }
+                if (hashTable[index] == null)
+                {
+                    return null;
+                }
 
-            hashTable[index].Current = hashTable[index].Head;
+                hashTable[index].Current = hashTable[index].Head;
 
-            while (hashTable[index].Current.Next != null)
-            {
+                while (hashTable[index].Current.Next != null)
+                {
+                    if (hashTable[index].Current.Key == key)
+                    {
+                        return hashTable[index].Current.Value;
+                    }
+                    else
+                    {
+                        hashTable[index].Current = hashTable[index].Current.Next;
+                    }
+                }
+
                 if (hashTable[index].Current.Key == key)
                 {
                     return hashTable[index].Current.Value;
                 }
-                else
-                {
-                    hashTable[index].Current = hashTable[index].Current.Next;
-                }
             }
-
-            if (hashTable[index].Current.Key == key)
+            catch(Exception e)
             {
-                return hashTable[index].Current.Value;
+                throw new Exception(e.Message);
             }
 
-            return "No value found matching that key";
+            return null;
         }
 
         /// <summary>
@@ -79,28 +86,35 @@ namespace HashTables.Classes
         {
             int index = Hash(key);
 
-            if (hashTable[index] == null)
+            try
             {
-                return false;
-            }
+                if (hashTable[index] == null)
+                {
+                    return false;
+                }
 
-            hashTable[index].Current = hashTable[index].Head;
+                hashTable[index].Current = hashTable[index].Head;
 
-            while (hashTable[index].Current.Next != null)
-            {
+                while (hashTable[index].Current.Next != null)
+                {
+                    if (hashTable[index].Current.Key == key)
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        hashTable[index].Current = hashTable[index].Current.Next;
+                    }
+                }
+
                 if (hashTable[index].Current.Key == key)
                 {
                     return true;
                 }
-                else
-                {
-                    hashTable[index].Current = hashTable[index].Current.Next;
-                }
             }
-
-            if (hashTable[index].Current.Key == key)
+            catch (Exception e)
             {
-                return true;
+                throw new Exception(e.Message);
             }
 
             return false;
