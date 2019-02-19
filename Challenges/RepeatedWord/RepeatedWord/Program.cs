@@ -1,4 +1,5 @@
 ﻿using System;
+using HashTables.Classes;
 
 namespace RepeatedWord
 {
@@ -15,23 +16,23 @@ namespace RepeatedWord
         {
             char[] delimiters = { ' ', ',', '.', '!', '?', ';', ':', '"', '\'', '\\', '/', '(', ')' };
             string[] words = yugeString.Split(delimiters);
+            HashTable table = new HashTable();
 
-            for (int i = 1; i < words.Length; i++)
+            for (int i = 0; i < words.Length; i++)
             {
-                int j = i - 1;
-                string temp = words[i];
-
-                while (j >= 0)
+                if (words[i] != "")
                 {
-                    if (temp == words[j] && (temp != "" && words[j] != ""))
+                    if (table.Contains(words[i]))
                     {
-                        return temp;
+                        return words[i];
                     }
-
-                    j--;
+                    else
+                    {
+                        table.Add(words[i], words[i]);
+                    }
                 }
             }
-
+           
             return null;
         }
     }

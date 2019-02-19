@@ -5,4 +5,10 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="HashTables">
+      <HintPath>..\..\..\Data-Structures\HashTables\HashTables\bin\Debug\netcoreapp2.2\HashTables.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
