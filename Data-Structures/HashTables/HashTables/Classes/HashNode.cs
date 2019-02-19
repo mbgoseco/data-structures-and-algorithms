@@ -6,11 +6,11 @@ namespace HashTables.Classes
 {
     public class HashNode
     {
-        public string Key { get; set; }
-        public string Value { get; set; }
+        public Object Key { get; set; }
+        public Object Value { get; set; }
         public HashNode Next { get; set; }
 
-        public HashNode(string key, string value)
+        public HashNode(Object key, Object value)
         {
             Key = key;
             Value = value;

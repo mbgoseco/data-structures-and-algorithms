@@ -6,14 +6,14 @@ namespace HashTables.Classes
 {
     public class HashTable
     {
-        public HashLinkedList[] hashTable { get; set; } = new HashLinkedList[100]; 
+        public HashLinkedList[] hashTable { get; set; } = new HashLinkedList[1000]; 
 
         /// <summary>
         /// Takes in a key/value pair, creates a hash value out of the key, and inserts the pair as a node into a linked list in the hash table at the index matching the hash value.
         /// </summary>
-        /// <param name="key">Key string</param>
-        /// <param name="value">Value string</param>
-        public void Add(string key, string value)
+        /// <param name="key">Key Object</param>
+        /// <param name="value">Value Object</param>
+        public void Add(Object key, Object value)
         {
             int index = Hash(key);
 
@@ -34,11 +34,11 @@ namespace HashTables.Classes
         }
 
         /// <summary>
-        /// Takes in a key string, creates a hash value from it, goes to the index of the hashtable matching the hash value, and traverses the linked list for a matching key. Returns the value paired to that key if found.
+        /// Takes in a key Object, creates a hash value from it, goes to the index of the hashtable matching the hash value, and traverses the linked list for a matching key. Returns the value paired to that key if found.
         /// </summary>
-        /// <param name="key">Key string</param>
+        /// <param name="key">Key Object</param>
         /// <returns>Value paired to key or "not found" message</returns>
-        public string Get(string key)
+        public Object Get(Object key)
         {
 
             int index = Hash(key);
@@ -54,7 +54,7 @@ namespace HashTables.Classes
 
                 while (hashTable[index].Current.Next != null)
                 {
-                    if (hashTable[index].Current.Key == key)
+                    if (hashTable[index].Current.Key.ToString() == key.ToString())
                     {
                         return hashTable[index].Current.Value;
                     }
@@ -64,7 +64,7 @@ namespace HashTables.Classes
                     }
                 }
 
-                if (hashTable[index].Current.Key == key)
+                if (hashTable[index].Current.Key.ToString() == key.ToString())
                 {
                     return hashTable[index].Current.Value;
                 }
@@ -78,11 +78,11 @@ namespace HashTables.Classes
         }
 
         /// <summary>
-        /// Takes in a key string, creates a hash value from it, goes to the index of the hashtable matching the hash value, and traverses the linked list for a matching key. Returns true if a matching key is  found, false it not.
+        /// Takes in a key Object, creates a hash value from it, goes to the index of the hashtable matching the hash value, and traverses the linked list for a matching key. Returns true if a matching key is  found, false it not.
         /// </summary>
-        /// <param name="key">Key string</param>
+        /// <param name="key">Key Object</param>
         /// <returns>True or False</returns>
-        public bool Contains(string key)
+        public bool Contains(Object key)
         {
             int index = Hash(key);
 
@@ -97,7 +97,7 @@ namespace HashTables.Classes
 
                 while (hashTable[index].Current.Next != null)
                 {
-                    if (hashTable[index].Current.Key == key)
+                    if (hashTable[index].Current.Key.ToString() == key.ToString())
                     {
                         return true;
                     }
@@ -107,7 +107,7 @@ namespace HashTables.Classes
                     }
                 }
 
-                if (hashTable[index].Current.Key == key)
+                if (hashTable[index].Current.Key.ToString() == key.ToString())
                 {
                     return true;
                 }
@@ -123,14 +123,14 @@ namespace HashTables.Classes
         /// <summary>
         /// Converts a given key to an integer value based on the unicode sum of its characters, passed into a mathematical formula, which is then used as an index to assign the key/value pair in the hash table. The hash algorithm is designed to crate adequate dispersal of pairs across the array to avoid collision.
         /// </summary>
-        /// <param name="key">Key string</param>
+        /// <param name="key">Key Object</param>
         /// <returns>Integer hash value</returns>
-        public int Hash(string key)
+        public int Hash(Object key)
         {
             int hashSum = 0;
             Encoding enc = Encoding.Unicode;
-            char[] chars = key.ToCharArray();
-            hashSum = (enc.GetByteCount(chars) * 103) % 100;
+            char[] chars = key.ToString().ToCharArray();
+            hashSum = (enc.GetByteCount(chars) * 103) % hashTable.Length;
             return hashSum;
         }
     }

@@ -10,11 +10,11 @@ namespace XUnitTestHashTables
         public void ValueGetsAssignedToDataStructure()
         {
             HashTable table = new HashTable();
-            string key = "Testing!";
-            string value = "123";
+            Object key = "Testing!";
+            Object value = "123";
             table.Add(key, value);
 
-            string result = table.hashTable[48].Head.Value;
+            Object result = table.hashTable[648].Head.Value;
 
             Assert.Equal("123", result);
         }
@@ -23,11 +23,11 @@ namespace XUnitTestHashTables
         public void CanGetValueMatchingKey()
         {
             HashTable table = new HashTable();
-            string key = "WORDS";
-            string value = "winner";
+            Object key = "WORDS";
+            Object value = "winner";
             table.Add(key, value);
 
-            string result = table.Get(key);
+            Object result = table.Get(key);
 
             Assert.Equal("winner", result);
         }
@@ -37,7 +37,7 @@ namespace XUnitTestHashTables
         {
             HashTable table = new HashTable();
 
-            string result = table.Get("wrong");
+            Object result = table.Get("wrong");
 
             Assert.Null(result);
         }
@@ -46,33 +46,33 @@ namespace XUnitTestHashTables
         public void CollisionResolvesBothPairs()
         {
             HashTable table = new HashTable();
-            string key = "goat";
-            string value = "baa!";
+            Object key = "goat";
+            Object value = "baa!";
             table.Add(key, value);
 
-            string keyTwo = "gato";
-            string valueTwo = "meow!";
+            Object keyTwo = "gato";
+            Object valueTwo = "meow!";
             table.Add(keyTwo, valueTwo);
 
-            string[] result = { table.hashTable[24].Head.Value, table.hashTable[24].Head.Next.Value };
+            Object[] result = { table.hashTable[824].Head.Value, table.hashTable[824].Head.Next.Value };
                 
 
-            Assert.Equal("meow!baa!", result[0] + result[1]);
+            Assert.Equal("meow!baa!", result[0].ToString() + result[1].ToString());
         }
 
         [Fact]
         public void CanGetValueFromCollisionBucket()
         {
             HashTable table = new HashTable();
-            string key = "goat";
-            string value = "baa!";
+            Object key = "goat";
+            Object value = "baa!";
             table.Add(key, value);
 
-            string keyTwo = "gato";
-            string valueTwo = "meow!";
+            Object keyTwo = "gato";
+            Object valueTwo = "meow!";
             table.Add(keyTwo, valueTwo);
 
-            string result = table.Get(key);
+            Object result = table.Get(key);
 
             Assert.Equal(value, result);
         }
@@ -81,11 +81,11 @@ namespace XUnitTestHashTables
         public void KeyHashesToInValueRange()
         {
             HashTable table = new HashTable();
-            string key = "Range of table is 0 to 100";
+            Object key = "Range of table is 0 to 100";
 
             int result = table.Hash(key);
 
-            Assert.True(result <= 100 && result >= 0);
+            Assert.True(result <= 1000 && result >= 0);
         }
     }
 }
