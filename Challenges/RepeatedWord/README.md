@@ -12,4 +12,4 @@ Through use of the hash table data structure, this app finds the first word that
 The approach to this method begins by splitting the words into an array of strings, using the spaces between as the delimiter. Afterwards, this array is iterated through, and at each index checks what begins as an empty hash table if the word at the current index is contained in the hash table. If it is then that word is returned. If not, then that word is added to the hash table and the iteration continues. If no repeating word is found, then the method returns null.
 
 ## Solution
-![whiteboard]()
+![whiteboard](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/RepeatedWord/Assets/repeated-word.jpg)
