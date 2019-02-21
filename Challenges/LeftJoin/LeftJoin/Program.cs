@@ -35,6 +35,12 @@ namespace LeftJoin
             }
         }
 
+        /// <summary>
+        /// Joins all keys and values from one hashmap with values from another hashmap having the same key. 
+        /// </summary>
+        /// <param name="synTable">Hashmap of string keys and synonym string values</param>
+        /// <param name="antTable">Hashmap of string keys and antonym string values</param>
+        /// <returns>List of arrays containing synonym key, value, and matching antonym value</returns>
         public static List<string[]> LeftJoin(HashTable synTable, HashTable antTable)
         {
             List<string[]> list = new List<string[]>();
@@ -50,7 +56,7 @@ namespace LeftJoin
                     {
                         string[] listItem = {synTable.hashTable[i].Current.Key.ToString(),
                                     synTable.hashTable[i].Current.Value.ToString(),
-                                    null};
+                                    "NULL"};
                         if (antTable.Contains(synTable.hashTable[i].Current.Key))
                         {
                             listItem[2] = antTable.Get(synTable.hashTable[i].Current.Key).ToString();
