@@ -17,4 +17,4 @@ This app demonstrates a Left Join operation on two hashmaps. In our example, two
 To begin with the end, the result of this method returns as a list of arrays. A for loop is used to iterate through the first hashmap. When it reaches an index that isn't null, it then traverses the linked list of that index. At each node an array instance is created that is populated with the node's key, value, and for the last index, the result of a check if the node's key exists in the second hashmap, which would be the value or null. That new array is added to the return list, and the iteration of the first hashmap continues, until finally returning the resulting list of arrays.
 
 ## Solution
-!(whiteboard)[https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/LeftJoin/Assets/left_join.jpg]
+![whiteboard](https://github.com/mbgoseco/data-structures-and-algorithms/blob/master/Challenges/LeftJoin/Assets/left_join.jpg)
