@@ -48,7 +48,14 @@ namespace Graphs.Classes
         /// <returns>List of nodes</returns>
         public List<Vertex> GetNodes()
         {
-            return Vertices;
+            if (Vertices.Count == 0)
+            {
+                return null;
+            }
+            else
+            {
+                return Vertices;
+            }
         }
 
         /// <summary>
