@@ -24,11 +24,11 @@ namespace XUnitTestGraphs
             Graph graph = new Graph();
             Vertex A = (Vertex)graph.AddNode("A");
             Vertex B = (Vertex)graph.AddNode("B");
+            Vertex C = (Vertex)graph.AddNode("C");
 
             graph.AddEdge(A, B, 15);
-            Vertex neighbor = graph.Vertices.Find(v => v.Value == "A").Edge.Find(e => e.Neighbor == B).Neighbor;
 
-            Assert.Equal(B, neighbor);
+            Assert.NotEmpty(A.Edge);
         }
 
         [Fact]
@@ -46,6 +46,19 @@ namespace XUnitTestGraphs
             var list = graph.GetNodes();
 
             Assert.IsType<List<Vertex>>(list);
+        }
+
+        [Fact]
+        public void CanGetNeighborsFromNode()
+        {
+            Graph graph = new Graph();
+            Vertex A = (Vertex)graph.AddNode("A");
+            Vertex B = (Vertex)graph.AddNode("B");
+            Vertex C = (Vertex)graph.AddNode("C");
+            graph.AddEdge(A, B, 45);
+            graph.AddEdge(A, C, 9);
+
+            var result = graph.GetNeighbors()
         }
     }
 }
