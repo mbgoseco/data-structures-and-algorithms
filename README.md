@@ -2,6 +2,41 @@
 
 ## Table of Contents
 
+### Challenges
+
 1. [Insert and Shift Array](Challenges/ArrayShift/ArrayShift)
 
 2. [Array Binary Search](Challenges/BinarySearch)
+
+3. [Animal Shelter](Challenges/AnimalShelter)
+
+4. [Binary Tree Height](Challenges/BinaryTreeHeight)
+
+5. [Breadth First Traversal](Challenges/BreadthFirstTraversal)
+
+6. [FizzBuzz Tree](Challenges/FizzBuzzTree)
+
+7. [Linked List Merge](Challenges/LList_Merge)
+
+8. [Left Join](Challenges/LeftJoin)
+
+9. [Kth From End](Challenges/LinkedList-KthFromEnd)
+
+10. [Max Value](Challenges/MaxVaue)
+
+11. [Multi-Bracket Validation](Challenges/MultiBracketValidation)
+
+12. [Queue With Stacks](Challenges/QueueWithStacks)
+
+13. [Repeated Word](Challenges/RepeatedWord)
+
+14. [Shuffle Linked List](Challenges/ShuffleLinkedList)
+
+15. [Sum of Odd Numbers](Challenges/SumOfOddNumbers)
+
+16. [Tree Intersection](Challenges/TreeIntersection)
+
+17. [Unique String Characters](Challenges/UniqueStringCharacters)
+
+### Data Structures
+
