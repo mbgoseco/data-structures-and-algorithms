@@ -40,3 +40,14 @@
 
 ### Data Structures
 
+1. [Linked Lists](Data-Structures/LinkedList)
+
+2. [Stacks and Queues](Data-Structures/StacksAndQueues)
+
+3. [Binary Trees](Data-Structures/HappyTrees)
+
+4. [Sorts](Data-Structures/Sorts)
+
+5. [Hash Tables](Data-Structures/HashTables)
+
+6. [Graphs](Data-Structures/Graphs)
