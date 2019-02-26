@@ -38,6 +38,8 @@
 
 17. [Unique String Characters](Challenges/UniqueStringCharacters)
 
+18. [Breadth First Graph](Challenges/BreadthFirstGraph)
+
 ### Data Structures
 
 1. [Linked Lists](Data-Structures/LinkedList)
