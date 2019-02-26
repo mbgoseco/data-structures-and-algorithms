@@ -81,6 +81,11 @@ namespace Graphs.Classes
             return Vertices.Count;
         }
 
+        /// <summary>
+        /// Returns an adjacency list of all nodes traversing from a starting root node.
+        /// </summary>
+        /// <param name="node">Root node</param>
+        /// <returns>Adjacency list</returns>
         public List<Vertex> BreadthFirst(Vertex node)
         {
             Vertex root = Vertices.Find(n => n.Value == node.Value);
