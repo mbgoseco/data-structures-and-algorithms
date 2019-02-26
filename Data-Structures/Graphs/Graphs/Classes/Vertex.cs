@@ -6,12 +6,14 @@ namespace Graphs.Classes
 {
     public class Vertex
     {
-        public List<Edge> Edge { get; set; } = new List<Edge>();
         public Object Value { get; set; }
+        public List<Edge> Edge { get; set; } = new List<Edge>();
+        public bool Visited { get; set; }
 
         public Vertex(Object value)
         {
             Value = value;
+            Visited = false;
         }
     }
 }
