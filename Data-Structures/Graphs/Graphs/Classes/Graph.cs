@@ -89,7 +89,7 @@ namespace Graphs.Classes
 
             nodeQueue.Enqueue(root);
 
-            while(nodeQueue.TryPeek(out root))
+            while(nodeQueue.Count > 0)
             {
                 Vertex front = nodeQueue.Dequeue();
                 front.Visited = true;
