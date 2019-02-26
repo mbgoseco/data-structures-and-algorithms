@@ -30,16 +30,20 @@ namespace Graphs.Classes
         {
             if (vertA == vertB)
             {
-                Edge edge = new Edge(vertA, weight);
+                Vertex point = Vertices.Find(v => v.Value == vertA.Value);
+                Edge edge = new Edge(point, weight);
                 Vertices.Find(v => v.Value == vertA.Value).Edge.Add(edge);
                 return;
             }
 
-            Edge edgeA = new Edge(vertB, weight);
-            Vertices.Find(v => v.Value == vertA.Value).Edge.Add(edgeA);
+            Vertex pointA = Vertices.Find(v => v.Value == vertA.Value);
+            Vertex pointB = Vertices.Find(v => v.Value == vertB.Value);
 
-            Edge edgeB = new Edge(vertA, weight);
-            Vertices.Find(v => v.Value == vertB.Value).Edge.Add(edgeB);
+            Edge edgeA = new Edge(pointB, weight);
+            pointA.Edge.Add(edgeA);
+
+            Edge edgeB = new Edge(pointA, weight);
+            pointB.Edge.Add(edgeB);
         }
 
         /// <summary>
@@ -75,6 +79,33 @@ namespace Graphs.Classes
         public int Size()
         {
             return Vertices.Count;
+        }
+
+        public List<Vertex> BreadthFirst(Vertex node)
+        {
+            Vertex root = Vertices.Find(n => n.Value == node.Value);
+            List<Vertex> nodePath = new List<Vertex>();
+            Queue<Vertex> nodeQueue = new Queue<Vertex>();
+
+            nodeQueue.Enqueue(root);
+
+            while(nodeQueue.TryPeek(out root))
+            {
+                Vertex front = nodeQueue.Dequeue();
+                front.Visited = true;
+                nodePath.Add(front);
+
+                foreach (Edge edge in front.Edge)
+                {
+                    if (!edge.Neighbor.Visited)
+                    {
+                        edge.Neighbor.Visited = true;
+                        nodeQueue.Enqueue(edge.Neighbor);
+                    }
+                }
+            }
+
+            return nodePath;
         }
     }
 }
