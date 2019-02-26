@@ -67,7 +67,7 @@ namespace Graphs
             graph.AddEdge(C, E, 10);
             graph.AddEdge(D, E, 80);
             graph.AddEdge(D, F, 74);
-            graph.AddEdge(E, F, 74);
+            graph.AddEdge(E, F, 9999);
 
             // Get adjacency list from A to F
             List<Vertex> path = graph.BreadthFirst(A);
