@@ -44,6 +44,11 @@ namespace FindEdges
             bool directPath = false;
             int cost = 0;
 
+            if (cities.Length <= 1)
+            {
+                return new Tuple<bool, int>(directPath, cost);
+            }
+
             for (int i = 0; i < cities.Length - 1; i++)
             {
                 List<Edge> nodeEdges = graph.GetNeighbors(new Vertex(cities[i]));
