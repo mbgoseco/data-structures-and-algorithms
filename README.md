@@ -40,6 +40,8 @@
 
 18. [Breadth First Graph](Challenges/BreadthFirstGraph)
 
+19. [Find Edges of Graph](Challenges/FindEdges)
+
 ### Data Structures
 
 1. [Linked Lists](Data-Structures/LinkedList)
