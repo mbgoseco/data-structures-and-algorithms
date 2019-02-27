@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindEdges", "FindEdges\FindEdges.csproj", "{0E13F9FF-0C5C-4C61-8E3A-E780C09E62C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XUnitTestFindEdges", "XUnitTestFindEdges\XUnitTestFindEdges.csproj", "{8ACC4B97-F6FC-4DA7-876D-5F4A1E7AB4F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E13F9FF-0C5C-4C61-8E3A-E780C09E62C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E13F9FF-0C5C-4C61-8E3A-E780C09E62C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E13F9FF-0C5C-4C61-8E3A-E780C09E62C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E13F9FF-0C5C-4C61-8E3A-E780C09E62C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACC4B97-F6FC-4DA7-876D-5F4A1E7AB4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACC4B97-F6FC-4DA7-876D-5F4A1E7AB4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACC4B97-F6FC-4DA7-876D-5F4A1E7AB4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACC4B97-F6FC-4DA7-876D-5F4A1E7AB4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {404125ED-268D-48D8-9ED9-085E942BFFEC}
+	EndGlobalSection
+EndGlobal
