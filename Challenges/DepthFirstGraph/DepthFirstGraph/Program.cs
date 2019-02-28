@@ -55,8 +55,13 @@ namespace DepthFirstGraph
         /// <returns>List of nodes</returns>
         public static List<Vertex> DepthFirst(Graph graph)
         {
+            if (graph.Vertices.Count == 0)
+            {
+                return null;
+            }
+
             List<Vertex> result = new List<Vertex>();
-            Vertex root = graph.Vertices.Find(v => v.Value.ToString() == "A");
+            Vertex root = graph.Vertices[0];
 
             result = DepthFirstHelper(graph, result, root);
             return result;
