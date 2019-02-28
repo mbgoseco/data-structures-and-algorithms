@@ -42,6 +42,8 @@
 
 19. [Find Edges of Graph](Challenges/FindEdges)
 
+20. [Depth First Graph](Challenges/DepthFirstGraph)
+
 ### Data Structures
 
 1. [Linked Lists](Data-Structures/LinkedList)
