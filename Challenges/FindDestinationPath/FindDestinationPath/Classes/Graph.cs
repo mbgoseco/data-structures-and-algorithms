@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Graphs.Classes
+namespace FindDestinationPath.Classes
 {
     public class Graph
     {
@@ -92,12 +92,12 @@ namespace Graphs.Classes
             List<Vertex> nodePath = new List<Vertex>();
             Queue<Vertex> nodeQueue = new Queue<Vertex>();
 
-            root.Visited = true;
             nodeQueue.Enqueue(root);
 
-            while(nodeQueue.Count > 0)
+            while (nodeQueue.Count > 0)
             {
                 Vertex front = nodeQueue.Dequeue();
+                front.Visited = true;
                 nodePath.Add(front);
 
                 foreach (Edge edge in front.Edge)
